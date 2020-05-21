@@ -1,0 +1,109 @@
+/* CSS Document */
+*{
+    font-family: 'Open Sans';
+}
+
+body {
+    color: #123;
+    text-align:center;
+    padding:35px; }
+  
+form, p, span {
+    margin:0;
+    padding:0; }
+  
+input { font:20px; }
+
+a {
+    color:#0000FF;
+    text-decoration:none; }
+
+    a:hover { text-decoration:underline; }
+  
+#chatbox {
+    text-align:left;
+    margin:0 auto;
+    margin-bottom:5px;
+    padding:5px;
+    background:#fff;
+    height:550px;
+    width:90%;
+    border: 2px solid #dedede;
+    border-radius: 5px;
+    overflow: auto;}
+
+.container {
+  background: #efefef;
+  border: 1px solid hsl(0, 100%, 30%);
+  border-radius: 4px;
+  box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  line-height: 1.3;
+  margin: 0 auto 20px;
+  width: 80%;
+  height:auto;
+  overflow-y: auto;
+  padding: 10px;
+  float:left;
+
+  p {
+    margin-bottom: 5px;
+
+    :last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Darker chat container */
+.darker {
+  border-color: #00cc99;
+  background-color: rgb(32,178,170);
+  float:right;
+}
+
+/* Clear floats */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style time text */
+.time-right {
+  float: right;
+  font-size:10px;
+}
+
+/* Style time text */
+.time-left {
+  float: left;
+  color: #fff;
+  font-size:10px;
+}
+  
+#usermsg {
+    width:85%;
+    height:30px;
+    float:middle;
+    border: 2px solid #dedede;
+    border-radius: 5px; 
+    overflow-y:: auto;}
+  
+#submit { width: 70px; 
+font-size: 1.5rem;}
+  
+.error { color: #ff0000; }
+  
+.welcome { 
+  font-size: 1.5rem;
+  color:hsl(0, 100%, 30%);
+  display: inline-block;
+  float:left;
+ }
+
+ #footer{
+  font-size:0.8rem;
+ }
+  
+.msgln { margin:0 0 5px 0; }

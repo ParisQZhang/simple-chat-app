@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chat Room-Paris Zhang</title>
+  <link type="text/css" rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="wrapper">
+    <p class="welcome">Let's have a little chat<b></b></p>
+     <div style="clear:both"></div>
+
+     <div id="chatbox" overflow:scroll>
+       <div id="intro">
+       <div id="c1" class="container">
+         <p>Hello. I'm a Chatbot that's not powered by AI yet :(</p>
+         <span class="time-right" id="timenow"></span>
+       </div>
+
+       <div id="c2" class="container">
+         <p>I will keep up with our conversation by asking you some random questions.</p>
+         <span class="time-right"></span>
+       </div>
+
+       <div id="c3" class="container">
+         <p>But I won't understand your messages. Ready? Let's go.</p>
+         <span class="time-right"></span>
+       </div>
+
+       <div id="c4" class="container">
+         <p id="randomquestions" ><script src="main.js"></script></p>
+         <span class="time-right"></span>
+       </div>
+       </div>
+    </div>
+
+    <form name="message">
+        <input name="usermsg" type="text" id="usermsg" size="100" placeholder="Say something" onkeydown="keydownFunction()" onkeyup="keyupFunction()">
+        <button type="submit" id="submitmsg" value="Send">Send</button>
+    </form>
+    <footer id="footer">
+      <p>Made by: Paris Zhang</p>
+    </footer>
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript">
+  window.onbeforeunload = function () {
+  return "Are you sure that you want to leave this page?";
+  };
+  </script>
+</body>
+</html>
