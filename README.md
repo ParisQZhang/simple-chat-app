@@ -5,4 +5,4 @@ On one side the computer will generate a random conversation, on the other side 
 
 Built with HTML, CSS, JavaScript and jQuery.
 
-![](demo.png)
+![](Demo.png)
